@@ -1,0 +1,91 @@
+/* ===== 顶部导航栏 ===== */
+#header {
+    background-color: #1f2933;
+    border-bottom: none;
+}
+
+#header h1 a {
+    color: #ffffff;
+    font-weight: 600;
+}
+
+#header a:link,
+#header a:visited {
+    color: #e5e7eb;
+}
+
+/* ===== 用户区域 ===== */
+#user-tools {
+    color: #e5e7eb;
+}
+
+/* ===== 左侧栏 ===== */
+#nav-sidebar {
+    background-color: #111827;
+}
+
+/* 左侧分组标题 */
+.module caption {
+    background-color: #111827;
+    color: #9ca3af;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+/* 左侧菜单项 */
+#nav-sidebar a {
+    color: #d1d5db;
+}
+
+#nav-sidebar a:hover {
+    background-color: #1f2933;
+}
+
+/* 当前选中 */
+#nav-sidebar .current-app,
+#nav-sidebar .current-model {
+    background-color: #1f2933;
+    border-left: 3px solid #2563eb;
+}
+
+/* ===== 内容区 ===== */
+#content {
+    background-color: #ffffff;
+    color: #111827;
+}
+
+/* ===== 表格 ===== */
+thead th {
+    background-color: #f3f4f6;
+    color: #111827;
+    font-weight: 600;
+}
+
+tbody tr:hover {
+    background-color: #f9fafb;
+}
+
+/* ===== 按钮 ===== */
+.button,
+input[type=submit],
+.submit-row input {
+    background-color: #2563eb;
+    color: #ffffff;
+    border-radius: 4px;
+    border: none;
+}
+
+.button:hover,
+input[type=submit]:hover {
+    background-color: #1d4ed8;
+}
+
+/* ===== 标签 / Badge（阶段） ===== */
+.field-stage span,
+.badge {
+    background-color: #6b7280;
+    color: #ffffff;
+    border-radius: 999px;
+    padding: 2px 8px;
+    font-size: 12px;
+}

@@ -1,0 +1,25 @@
+{% extends "base.html" %}
+
+{% block title %}首页 | CRM{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">客户总数</h5>
+                <p class="display-6">{{ customer_count }}</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="col-md-6">
+        <div class="card shadow-sm">
+            <div class="card-body">
+                <h5 class="card-title">销售机会数</h5>
+                <p class="display-6">{{ opportunity_count }}</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
