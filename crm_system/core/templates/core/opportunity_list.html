@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+
+{% block title %}销售机会{% endblock %}
+
+{% block content %}
+<h3 class="mb-3">销售机会</h3>
+
+<table class="table table-bordered table-hover">
+    <thead class="table-light">
+        <tr>
+            <th>机会名称</th>
+            <th>客户</th>
+            <th>阶段</th>
+            <th>金额</th>
+            <th>成功率</th>
+        </tr>
+    </thead>
+    <tbody>
+        {% for o in opportunities %}
+        <tr>
+            <td>{{ o.name }}</td>
+            <td>{{ o.customer.name }}</td>
+            <td>
+                <span class="badge bg-secondary">{{ o.get_stage_display }}</span>
+            </td>
+            <td>￥{{ o.amount }}</td>
+            <td>{{ o.probability }}%</td>
+        </tr>
+        {% endfor %}
+    </tbody>
+</table>
+{% endblock %}
